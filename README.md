@@ -15,7 +15,7 @@ plugins:
     override_path_via_body: true # If false - Path from "Service" object - Needed if body contains RequestPath
     override_body:
     - MessageBody:it works really well
-    - Action=SendMessage # To SQS - Only allow send messages
+    - Action:SendMessage # To SQS - Only allow send messages
     - RequestPath:/000000000000/test_queue # To SQS - Only allow send to this queue
 ```
 
